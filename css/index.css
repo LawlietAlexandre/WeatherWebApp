@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-color: #fff;
+    --block-color: #6b7280;
+    --body-gradient: linear-gradient(to bottom, #232526, #414345);
+}
+
+*{
+    font-family:"Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-color);
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--body-gradient);
+}
+
+.currentData{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.predictionSection{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.block{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.4);
+    background: var(--block-color);
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+
+.block:hover{
+    transform: translateY(-4px) scale(1.02);
+}

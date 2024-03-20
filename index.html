@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>App del clima</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body onload="onLoad()">
+        <div class="container">
+            <section class="currentData">
+                <div class="block">
+                    <h2 id="temperatureValue"></h2>
+                    <h2 id="temperatureDescription"></h2>
+                </div>
+                <div class="block">
+                    <h2 id="location"></h2>
+                    <img src="" alt="" id="dinamicIcon" width="80px">
+                </div>
+                <div class="block">
+                    <h3>Humidity</h3>
+                    <h2 id="humidity"></h2>
+                </div>
+                <div class="block">
+                    <h3>Wind speed</h3>
+                    <h2 id="windSpeed"></h2>
+                </div>
+            </section>
+            <section class="predictionSection">
+                <div id="day1" class="prediction">
+                    <h4 id="weekDay1"></h4>
+                    <img src="" alt="" id="icon1" width="80px">
+                    <p id="maxmin1"></p>
+                </div>
+                <div id="day2" class="prediction">
+                    <h4 id="weekDay2"></h4>
+                    <img src="" alt="" id="icon2" width="70px">
+                    <p id="maxmin2"></p>
+                </div>
+                <div id="day3" class="prediction">
+                    <h4 id="weekDay3"></h4>
+                    <img src="" alt="" id="icon3" width="70px">
+                    <p id="maxmin3"></p>
+                </div>
+                <div id="day4" class="prediction">
+                    <h4 id="weekDay4"></h4>
+                    <img src="" alt="" id="icon4" width="70px">
+                    <p id="maxmin4"></p>
+                </div>
+                <div id="day5" class="prediction">
+                    <h4 id="weekDay5"></h4>
+                    <img src="" alt="" id="icon5" width="70px">
+                    <p id="maxmin5"></p>
+                </div>
+            </section>
+        </div>
+        <script src="javascript/index.js"></script>
+    </body>
+</html>
